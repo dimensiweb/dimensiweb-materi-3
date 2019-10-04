@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!--Metadata Bagaimana sebuah halaman memproses data yang ada-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Menampilkan tampilan WEB agar sesuai dengan tampilan asal-->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--Agar dapat kompatibel dengan IE-->
+        <link rel="stylesheet" href="css/uikit.min.css"> <!--UIKit CSS-->
+        <link rel="stylesheet" href="css/style.css"> <!--Menghubungkan file index dengan CSS file-->
+
+        <script src="js/uikit.min.js"></script> <!--UIKit JS-->
+        <title>BSO DimensiWEB</title>
+        <link rel="icon" type="image/gif/png" href="assets/logo dimensiw bw.png "> <!--Versi cepat list icon-->
+    </head>
+    <body>
+        <div class="container-head">
+                <header class="container">
+                        <div class="logo">
+                            <img class="logodw" src="assets/logo dimensiw color.png">
+                            <div class="dimensiw">
+                                <span class="teks1">Dimensi</span> <!--Menyatukan yang seharusnya terpisah-->
+                                <span class="teks2">WEB</span>
+                            </div>
+                        </div>
+                        <nav> <!--Link Navigasi-->
+                            <ul> <!--Unordered List (Bullet)-->
+                                <li><a class="uk-link-heading" href="#home">Home</a></li> <!--Ordered List (Number)-->
+                                <li><a class="uk-link-heading" href="#gallery">Gallery</a></li>
+                                <li><a class="uk-link-heading" href="#home">Learn More</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+        </div>
+        
+        <h1 class="title">We Are Here to Help You to Become Web Developer</h1> <!--Header h1-h6-->
+        <main class="container"> <!--Tag Konten Utama (UNIQUE)-->
+            <div class="illustration">
+                <img class="img1" src="assets/Web_design_PNG.png" alt="credit to the owner">
+            </div>
+            <section class="hero container"> <!--Mendefinisikan Section (Bagian)-->
+                <h1 class="conti">Make Your Own Landing Page</h1>
+                <p class="p">Membuat Responsive Landing Page ini tanpa menggunakan Framework apapun. Hanya dengan menggunakan HTML dan CSS Flexbox</p> <!--Paragraf-->
+            </section>
+        </main>
+        <main class="container2">
+            <div class="illustration2">
+                <img class="img2" src="assets/Web_hosting_PNG.png" alt="credit to the owner">
+            </div>
+            <section class="hero2 container2">
+                <h1 class="conti2">Host Your Own Website For FREE Using GitHub</h1>
+                <p class="p2">Dengan materi tambahan yaitu penggunaan dasar Git. Melakukan hosting web dengan GitHub Pages</p>
+            </section>
+        </main>
+        <div uk-slider="center: true" id="gallery">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                <ul class="uk-slider-items uk-child-width-1-2@s" uk-grid uk-height-match="target: > li > .uk-card">
+                    <li>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top img-container">
+                                <img src="assets/addiction-adult-blond-1624264.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Picture 1</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top img-container">
+                                <img src="assets/ballpen-black-and-white-communication-934062.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Picture 2</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="assets/black-and-white-books-connection-251225.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Picture 3</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="assets/asian-boys-community-923657.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Picture 4</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="assets/basketball-court-black-and-white-casual-428318.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Picture 5</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+        </div>
+        <div class="button">
+            <div class="invitation">
+                    <h2>THIS FRIDAY!</h2>
+                    <p>4:00 PM @ LAB 4.05</p>
+            </div>
+            <a href="https://bit.ly/2kIA0xK">Join Us</a>
+        </div>
+        <p>All Rights Belong To Their Respectfull Owner.</p>
+    </body>
+</html>
