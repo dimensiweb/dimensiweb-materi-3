@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Gallery Dimensi Web</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">list</a></li>
+                <li><a href="upload.html">upload</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div>
+                <form id="form_upload">
+                    <div>
+                        <input type="text" id="nama" placeholder="nama">
+                    </div>
+                    <div>
+                        <textarea name="deskripsi" id="deskripsi" cols="30" rows="10" placeholder="deskripsi"></textarea>
+                    </div>
+                    <div>
+                        <input type="file" onchange="previewFile()">
+                    </div>
+                    <div>
+                        <img src="" id="preview" on="on" width="50%">
+                    </div>
+                    <div>
+                      <progress value="0" max="100" id="uploader">0%</progress>
+                    </div>
+                    <div>
+                        <input type="hidden" name="foto" id="gambar" disabled="disabled">
+                    </div>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+        <script src="upload.js"></script>
+    </body>
+</html>
