@@ -12,6 +12,7 @@ const fb            = firebase.initializeApp(firebaseConfig);
 const storageRef    = fb.storage().ref();
 const uploader      = document.getElementById('uploader');
 const nama          = document.getElementById('nama');
+const deskripsi     = document.getElementById('deskripsi');
 let file_gambar     = "";
 
 function previewFile() {
@@ -42,6 +43,7 @@ document.getElementById("form_upload").addEventListener("submit", function(e){
     let nm_db = "https://firebasestorage.googleapis.com/v0/b/materi-fb.appspot.com/o/gallery%2F" + nama;
     let media = nm_db + "?alt=media"
     entry.url = media;
+    entry.deskripsi = deskripsi;
     entry.nama = $(this).find('[id="nama"]').val();
     let Entry = firebase.database().ref('tb_gambar');
     Entry.push(entry).then(function (data) {
