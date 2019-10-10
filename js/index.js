@@ -13,15 +13,22 @@ const database  = fb.database();
 database.ref().once('child_added', function (snapshot) {
     if (snapshot.exists()) {
         let content = '';
-        let i = 1;
         snapshot.forEach(function (data) {
             let val = data.val();
-            content += '<tr>';
-            content += `<td> ${i++}) </td>`;
-            content += `<td width="400px">${val.nama}</td>`;
-            content += `<td><a href="${val.url}"><img src="${val.url}" width="200px"></a></td>`;
-            content += '</tr>';
+            content += '<li>';
+                content += '<div class="uk-card uk-card-default">';
+                    content += '<div class="uk-card-media-top img-container">';
+                        content += '<img src="assets/addiction-adult-blond-1624264.jpg" alt="">';
+                    content += '</div>';
+                    content += '<div>';
+                        content += '<div class="uk-card-body">';
+                            content += `<h3 class="uk-card-title">${val.nama}</h3>`;
+                            content += `<p>${val.deskripsi}</p>`;
+                        content += '</div>';
+                    content += '</div>';
+                content += '</div>';
+            content += '</li>';
         });
-        document.getElementById('table').innerHTML = content;
+        document.getElementById('isi-gallery').innerHTML = content;
     }
 });
