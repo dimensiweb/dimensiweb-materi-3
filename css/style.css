@@ -155,7 +155,6 @@ main{
     width: 100%;
 }
 #gallery ul li img{
-    height: 100%;
     object-fit: contain;
 }
 /* Media Screen */
