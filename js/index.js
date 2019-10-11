@@ -18,7 +18,7 @@ database.ref().once('child_added', function (snapshot) {
             content += '<li>';
                 content += '<div class="uk-card uk-card-default">';
                     content += '<div class="uk-card-media-top img-container">';
-                        content += '<img src="assets/addiction-adult-blond-1624264.jpg" alt="">';
+                        content += `<img src="${val.url}" alt="${val.nama}">`;
                     content += '</div>';
                     content += '<div>';
                         content += '<div class="uk-card-body">';
